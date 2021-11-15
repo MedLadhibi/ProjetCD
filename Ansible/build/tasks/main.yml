@@ -1,4 +1,4 @@
 
 #buildproject
-	- build app
-	  shell: ng build --prod 
+        - build app
+          shell: ng build --prod 
