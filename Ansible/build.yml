@@ -3,5 +3,5 @@
 	- hosts: localhost
 	  gather_facts: true
 	  become: true
-  	  roles:
+          roles:
 	    - { role: build }
