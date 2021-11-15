@@ -1,6 +1,6 @@
 ---
        - hosts: localhost
          gather_facts: true
-         sudo: true
+         become: true
          roles:
           - { role: build }
