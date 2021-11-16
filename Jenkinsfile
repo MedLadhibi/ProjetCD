@@ -24,13 +24,22 @@ pipeline
 			}
 				}
 
-                stage('docker') {
+                stage('Docker') {
                     steps{
                         script{
-                        sh "ansible-playbook ansible/docker.yml -i ansible/inventory/host.yml"
+                        sh "ansible-playbook Ansible/docker.yml -i Ansible/inventory/host.yml"
                                 }
                         }
                                 }
+
+               stage('dockerHub') {
+                   steps{
+                       script{
+                       sh "ansible-playbook Ansible/docker-registry.yml -i Ansible/inventory/host.yml"
+                                  }
+                        }
+                                  }
+
 
  }
 }
