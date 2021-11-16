@@ -3,11 +3,11 @@
 - name: Log into DockerHub
   docker_login:
     username: medladhibi
-    password: Dockerhub
+    password: Mazda012!
 
 - name: Tag and push to docker hub
   docker_image:
-    name: pipe:latest
+    name: contdep:latest
     repository: medladhibi/ProjetCD
     tag: end
     push: yes
