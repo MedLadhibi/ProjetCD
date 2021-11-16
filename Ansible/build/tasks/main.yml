@@ -3,4 +3,4 @@
         - name: "build nodes"
           shell: npm install --save-dev @angular-devkit/build-angular	
         - name: "build app"        
-          shell: ng build --prod --aot --env:prod 
+          shell: ng build --prod
