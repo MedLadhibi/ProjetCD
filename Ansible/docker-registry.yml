@@ -3,4 +3,4 @@
      gather_facts: yes
      become: true
      roles:
-            x- { role: docker-registry }
+       - { role: docker-registry }
