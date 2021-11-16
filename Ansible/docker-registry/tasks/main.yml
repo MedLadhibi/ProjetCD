@@ -8,6 +8,6 @@
 - name: Tag and push to docker hub
   docker_image:
     name: contdep:latest
-    repository: medladhibi/projetCD
+    repository: medladhibi/projetcd
     tag: end
     push: yes
